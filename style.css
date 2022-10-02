@@ -5,39 +5,70 @@
     padding: 0 10px !important;
     margin: 0;
 }
+.item{
+    width: 100%;
+}
 
-#head{
+#teteA{
     display: flex;
-    gap: 100px;
-    background-color: rgb(121, 209, 211);
-    width: 70%;
+    gap: 200px;
+    background-color: #281bd1;;
     margin: auto;
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 10px 10px 0  0;
-    
+    padding: 14px;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    color: white;    
+    font-size: 1.5em;
+    border-radius: 20px 20px 0 0 ;
+}
+#teteB,#teteC{
+    display: flex;
+    gap: 200px;
+    background-color: #281bd1;;
+    margin: auto;
+    padding: 14px;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    color: white;    
+    font-size: 1.5em;
+}
+#teteD{
+    display: flex;
+    gap: 200px;
+    background-color: #281bd1;;
+    margin: auto;
+    padding: 14px;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    color: white;    
+    font-size: 1.5em;
+    border-radius: 0 0 20px 20px  ;
 }
 button:hover{
     cursor: pointer;
 }
-#content{
-    
-    width: 71.7%;
+.accor{
+    border: 1px solid #22192c;
+    border-radius: 20px;
+    width: 70%;
     margin: auto;
-   border: 1px solid transparent;
-   border-radius:0 0 10px 10px;
-   padding: 10px;
+}
+.content{   
+    margin: auto;
+   border-bottom: 1px solid transparent;
+   padding: 15px;
    box-sizing: border-box;
-   background-color: rgb(242, 237, 237);
-   transition: all 0.5s;
+   background-color: white;
+   color: black;
+   transition: all 0.3s;
+   font-size: 1em;
    
 }
-button{
-    background-color: transparent;
-    border: none;
+i{
     color: white;
+    margin-right: 100px;
+}
+
+.active{
+    transform: rotate(180deg);
 }
 h1{
-    color: white;
-    margin: auto;
+    text-align: center;
 }

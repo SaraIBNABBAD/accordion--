@@ -1,13 +1,16 @@
 
-let parg = document.getElementById("content");
-let icone = document.querySelector("i");
+let divs = document.getElementsByClassName("head");
+let icone = document.querySelectorAll("i");
 
-icone.addEventListener("click",function(){
-    parg.classList.toggle("hide");
-    if(parg.classList.contains("hide")){
-        icone.classList.replace("fa-minus","fa-plus");
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i].addEventListener("click", function () {
+      let parage = document.getElementsByClassName("content");
+      parage[i].classList.toggle("hide");
+      if(parage[i].classList.contains("hide")){
+        icone[i].classList.replace("fa-minus","fa-plus");
     }else{
-        icone.classList.replace("fa-plus","fa-minus");
+        icone[i].classList.replace("fa-plus","fa-minus");
     }
-});
-
+    });
+  }
